@@ -21,9 +21,6 @@ Built with modern React + TypeScript and powered by Google's Gemini model, Chef 
 - 🎨 **Clean, modern UI**  
   Simple, intuitive, and cooking-friendly interface.
 
-- 🔐 **Environment-safe API integration**  
-  API key stored securely in `.env` (never committed to Git).
-
 ---
 
 ## 🧠 Tech Stack
