@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# 👨‍🍳 Chef AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AI-powered recipe generator built with React + TypeScript and the Google Gemini API.**
 
-Currently, two official plugins are available:
+Chef AI is a smart cooking assistant that generates personalized recipes based on user-provided ingredients or preferences.  
+Built with modern React + TypeScript and powered by Google's Gemini model, Chef AI helps users explore creative dishes instantly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔮 **AI-generated recipes**  
+  Enter ingredients or prompts and get fully generated recipes using Gemini.
 
-## Expanding the ESLint configuration
+- ⚛️ **Built with React + TypeScript**  
+  Strong types, scalable component architecture, and reliable UI logic.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚡ **Vite for fast dev environment**  
+  Hot reloads and ultra-fast builds.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🎨 **Clean, modern UI**  
+  Simple, intuitive, and cooking-friendly interface.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🔐 **Environment-safe API integration**  
+  API key stored securely in `.env` (never committed to Git).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧠 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Tech                      | Usage                         |
+| ------------------------- | ----------------------------- |
+| React + TypeScript        | Frontend UI + component logic |
+| Vite                      | Dev server + building         |
+| **Google Gemini API**     | Recipe generation AI          |
+| CSS / Tailwind (optional) | Styling                       |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
