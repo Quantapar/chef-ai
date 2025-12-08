@@ -3,7 +3,7 @@ export function Header() {
     <>
       <div className="header">
         <img className="chef-img" src="src/assets/chef.png" alt="chef-icon" />
-        <span>Chef Claude</span>
+        <span>Chef Ai</span>
       </div>
     </>
   );
