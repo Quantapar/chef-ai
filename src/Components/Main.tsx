@@ -7,7 +7,7 @@ export function Main() {
   const ingredientsListItems = ingredients.map((ingredient) => (
     <li key={ingredient}>{ingredient}</li>
   ));
-
+ 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -18,7 +18,7 @@ export function Main() {
 
     setIngredients((prev) => [...prev, newIngredient.trim()]);
 
-    event.currentTarget.reset(); // <-- clears the input
+    event.currentTarget.reset();
   }
   return (
     <>
